@@ -1,6 +1,6 @@
 "use strict";
 
-// import { useDynamicAdapt } from './modules/dynamicAdapt.js';
+import { useDynamicAdapt } from './modules/dynamicAdapt.js';
 import AOS from 'aos';
 import MicroModal from 'micromodal';
 import "./modules/scrollTriggers.js";
@@ -14,6 +14,7 @@ import "./modules/faq-form.js";
 import "./modules/fast-consult-form.js";
 
 function app() {
+  useDynamicAdapt("max");
   MicroModal.init({
     disableScroll: true
   });
