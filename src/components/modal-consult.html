@@ -1,0 +1,20 @@
+<div class="modal fixed transition-all z-[99999] opacity-0 invisible duration-300 inset-0 h-full w-full bg-black/50 px-4" id="fast-consult" aria-hidden="true" data-micromodal-close>
+   <div class="grid h-full w-full place-content-center">
+     <div class="bg-muted w-full overflow-auto max-w-[43.75rem] flex flex-col text-center items-center relative px-[1.875rem] pt-[1.875rem] pb-[3.125rem]" role="dialog" aria-modal="true">
+       <button data-micromodal-close type="button" class="mb-10 sm:mb-[3.75rem]">
+        <svg class='lg:w-[3.75rem] lg:h-[3.75rem] w-9 h-9'>
+          <use href='./sprites/sprite.svg#icon-close'></use>
+        </svg>
+       </button>
+       <h2 class="text-[#D9D9D9] uppercase text-xl sm:text-2xl lg:text-3xl mb-5 sm:mb-10 lg:mb-14">Швидка консультація</h2>
+       <p class="text-[#D9D9D9] uppercase text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-12 lg:mb-16 font-normal">Залиште ваші дані і отримайте консультацію</p>
+       <form action="#" id="fast-consult-form">
+        <div class="space-y-10 sm:space-y-[3.13rem] mb-10 sm:mb-14 lg:mb-20">
+          <input type="text" class="w-full lg:text-base text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent " placeholder="Ім'я">
+          <input type="tel" class="w-full lg:text-base text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent " placeholder="номер телефону">
+        </div>
+        <button class="bg-[#D9D9D9] text-black py-4 px-12 lg:py-7 lg:px-20 lg:text-base text-base sm:text-xl hover:bg-dark/50 hover:text-light transition-colors uppercase" type="submit">надіслати</button>
+       </form>
+     </div>
+   </div>
+ </div>

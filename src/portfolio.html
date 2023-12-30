@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'Портфоліо' })
+  <body>
+    <div class="overflow-hidden relative">
+      @@include('components/header.html', { })
+      <main>
+        <!-- hero section -->
+        <section class="bg-cover pt-[10.3rem] min-h-screen flex flex-col relative overflow-hidden">
+          <img src="./img/portfolio-page/hero-bg.webp" alt="Портфоліо" class="main-bg-gsap will-change-auto absolute left-0 top-0 w-full h-full object-cover" />
+          <div class="mt-auto container">
+            <h1 class="sr-only">Портфоліо</h1>
+          </div>
+        </section>
+
+        <section class="bg-dark py-[3.125rem]">
+          <div class="container grid grid-cols-1 xl:grid-cols-[370px_1fr] gap-20 xl:gap-28">
+            <!-- sidebar -->
+            <aside>
+              <div class="flex flex-wrap gap-x-6 gap-y-3 xl:gap-[1.85rem] items-center mb-6 xl:mb-[6.25rem]">
+                <div class="active-item text-white/40 relative">
+                  <a href="#" class="text-lg sm:text-xl uppercase hover:underline">Всі проекти</a>
+                  <span class="text-[0.625rem] absolute -top-1 -right-3.5">70</span>
+                </div>
+                <span class="text-white/40">/</span>
+                <div class="text-white/40 relative">
+                  <a href="#" class="text-lg sm:text-xl uppercase hover:underline">квартири</a>
+                  <span class="text-[0.625rem] absolute -top-1 -right-3.5">40</span>
+                </div>
+                <span class="text-white/40">/</span>
+                <div class="text-white/40 relative">
+                  <a href="#" class="text-lg sm:text-xl uppercase hover:underline">дім</a>
+                  <span class="text-[0.625rem] absolute -top-1 -right-3.5">8</span>
+                </div>
+                <span class="text-white/40">/</span>
+                <div class="text-white/40 relative">
+                  <a href="#" class="text-lg sm:text-xl uppercase hover:underline">комерція</a>
+                  <span class="text-[0.625rem] absolute -top-1 -right-3.5">12</span>
+                </div>
+                <span class="text-white/40">/</span>
+                <div class="text-white/40 relative">
+                  <a href="#" class="text-lg sm:text-xl uppercase hover:underline">іншу</a>
+                  <span class="text-[0.625rem] absolute -top-1 -right-3.5">10</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-[1.85rem] items-center">
+                <span class="text-xl uppercase text-white">вид:</span>
+                <div id="view-switchers" class="flex flex-wrap gap-3 sm:gap-6 lg:gap-[1.85rem] items-center">
+                  <button id="view-as-photo" class="active-view-tigger text-white/40 text-lg sm:text-xl uppercase hover:underline" type="button">фото</button>
+                  <span class="text-white/40">/</span>
+                  <button id="view-as-list" class="text-white/40 text-lg sm:text-xl uppercase hover:underline" type="button">список</button>
+                </div>
+              </div>
+            </aside>
+
+            <!-- page content -->
+            <div>
+              <!-- portfolio (photos) -->
+              <div id="portfolio-photos-content" class="active-view mb-20 xl:mb-36">
+                <!-- row 1 -->
+                <div class="relative mb-12">
+                  <!-- project 1 -->
+                  <div data-aos="fade-down-left" class="">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_1.webp" alt="project_1" class="group-hover:scale-110 transition-transform duration-500 w-full h-full object-cover " />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #247</h2>
+                    <p class="text-xl">2022</p>
+                  </div>
+                </div>
+
+                <!-- row 2 -->
+                <div class="relative mb-12 xl:mb-72 max-xl:space-y-12">
+                  <!-- project 2 -->
+                  <div data-aos="fade-down-right" class="w-[85%] xl:w-[70%]">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_2-1.webp" alt="project_1" class="group-hover:scale-110 transition-transform duration-500 w-full h-full object-cover " />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #246</h2>
+                    <p class="text-xl">2021</p>
+                  </div>
+                  <!-- project 3 -->
+                  <div data-aos="fade-down-left" class="ml-auto w-[75%] xl:w-[45%] xl:absolute xl:top-[20%] xl:right-0">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_2-2.webp" alt="project_1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #245</h2>
+                    <p class="text-xl">2020</p>
+                  </div>
+                </div>
+
+                <!-- row 3 -->
+                <div class="relative mb-12 xl:mb-80 max-xl:space-y-12">
+                  <!-- project 4 -->
+                  <div data-aos="fade-down-right" class="w-[75%] xl:w-[50%] relative z-10">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_3-1.webp" alt="project_1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #244</h2>
+                    <p class="text-xl">2020</p>
+                  </div>
+                  <!-- project 5 -->
+                  <div data-aos="fade-down-left" class="ml-auto w-[85%] xl:w-[70%] xl:absolute xl:top-[40%] xl:right-0">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_3-2.webp" alt="project_1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #243</h2>
+                    <p class="text-xl">2021</p>
+                  </div>
+                </div>
+
+                <!-- row 4 -->
+                <div class="relative">
+                  <!-- project 6 -->
+                  <div data-aos="fade-down-left" class="w-full]">
+                    <a href="single.html" class="w-full h-full block mb-4 sm:mb-10 group overflow-hidden">
+                      <img src="./img/portfolio-page/project_4.webp" alt="project_1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </a>
+                    <h2 class="mb-0.5 sm:mb-9 text-lg sm:text-2xl uppercase">Проект #242</h2>
+                    <p class="text-xl">2022</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- portfolio (list) -->
+              <div id="portfolio-list-content" class="w-full mb-20 xl:mb-36">
+                <table class="w-full">
+                  <thead>
+                    <tr>
+                      <th class="text-left font-medium text-white/40 text-lg lg:text-xl pb-6 lg:pb-12">Проект</th>
+                      <th class="text-left font-medium text-white/40 text-lg lg:text-xl pb-6 lg:pb-12">Рік</th>
+                      <th class="text-left font-medium text-white/40 text-lg lg:text-xl pb-6 lg:pb-12">Місце</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-light border-y border-light">
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2022</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Інша назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2021</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Чернігів</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Ще один проект проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2023</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2022</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Інша назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2021</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Чернігів</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Ще один проект проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2023</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2022</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Інша назва проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2021</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Чернігів</td>
+                    </tr>
+                    <tr>
+                      <td class="py-4 text-base md:text-xl lg:py-8"><a href="single.html" class="hover:underline">Ще один проект проекту</a></td>
+                      <td class="py-4 px-4 text-base md:text-xl lg:py-8">2023</td>
+                      <td class="py-4 text-base md:text-xl lg:py-8">Київ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- pagination -->
+              <ul class="pagination flex max-xl:justify-center items-center gap-4">
+                <li class="shrink-0">
+                  <a
+                    href="#"
+                    class="active-page sm:w-12 sm:h-12 w-10 h-10 xl:w-[3.75rem] xl:h-[3.75rem] grid place-content-center bg-darker hover:bg-darker/70 transition-colors-none text-white/40 text-xl xl:text-4xl font-normal"
+                    >1</a
+                  >
+                </li>
+                <li class="shrink-0">
+                  <a
+                    href="#"
+                    class="sm:w-12 sm:h-12 w-10 h-10 xl:w-[3.75rem] xl:h-[3.75rem] grid place-content-center bg-darker hover:bg-darker/70 transition-colors-none text-white/40 text-xl xl:text-4xl font-normal"
+                    >2</a
+                  >
+                </li>
+                <li class="shrink-0">
+                  <a
+                    href="#"
+                    class="sm:w-12 sm:h-12 w-10 h-10 xl:w-[3.75rem] xl:h-[3.75rem] grid place-content-center bg-darker hover:bg-darker/70 transition-colors-none text-white/40 text-xl xl:text-4xl font-normal"
+                    >3</a
+                  >
+                </li>
+                <li class="shrink-0">
+                  <a
+                    href="#"
+                    class="sm:w-12 sm:h-12 w-10 h-10 xl:w-[3.75rem] xl:h-[3.75rem] grid place-content-center bg-darker hover:bg-darker/70 transition-colors-none text-white/40 text-xl xl:text-4xl font-normal"
+                    >4</a
+                  >
+                </li>
+                <li class="shrink-0">
+                  <a href="#" class="sm:w-12 sm:h-12 w-10 h-10 xl:w-[3.75rem] xl:h-[3.75rem] grid place-content-center bg-darker hover:bg-darker/70 transition-colors">
+                    <img src="./img/simple-arrow.svg" alt="" class="w-5 xl:w-6 h-5 xl:h-6" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('components/to-top-button.html', { }) @@include('components/footer.html', { })
+    </div>
+    <script type="module" src="./js/app.min.js"></script>
+  </body>
+</html>

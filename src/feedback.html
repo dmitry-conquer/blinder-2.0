@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'Запит' })
+  <body>
+    <div class="overflow-hidden relative">
+      @@include('components/header.html', { })
+      <main>
+        <section class="pt-32 md:pt-[11rem] min-h-screen bg-dark pb-[3.12rem]">
+          <div class="container">
+            <h1 class="uppercase text-2xl md:text-3xl text-center mb-16 md:mb-36">Заповніть форму і отримайте розрахунок вартості, а також подарунок</h1>
+            <form id="order-form" action="#">
+              <!-- blocks counter -->
+              <div id="block-counter" class="text-white/40 uppercase text-xl md:text-2xl mb-[1.87rem]">крок <span>01</span> / <span>04</span></div>
+
+              <!-- block 1 -->
+              <div class="hidden" data-quiz-id="0">
+                <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Характер вашого проекту</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:auto-rows-[27.1rem] gap-4 lg:gap-7">
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 max-xl:pt-[1.87rem] px-[1.87rem] pb-[1.87rem]">
+                    <input type="radio" name="project-type" value="Квартира" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-flat"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Квартира</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 max-xl:pt-[1.87rem] px-[1.87rem] pb-[1.87rem]">
+                    <input type="radio" name="project-type" value="Дім" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-house"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Дім</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 max-xl:pt-[1.87rem] px-[1.87rem] pb-[1.87rem]">
+                    <input id="project-type-commerce" type="radio" name="project-type" value="Комерція" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-commerce"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Комерція</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 max-xl:pt-[1.87rem] px-[1.87rem] pb-[1.87rem]">
+                    <input type="radio" name="project-type" value="Інше" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-another"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Інше</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- block 2 -->
+              <div class="hidden" data-quiz-id="1">
+                <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Призначення</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:auto-rows-[27.1rem] gap-4 lg:gap-7">
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 px-[1.87rem] pb-[1.87rem] max-xl:pt-[1.87rem]">
+                    <input type="radio" name="project-commerce-type" value="HoReCa" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-HoReCa"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">HoReCa</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 px-[1.87rem] pb-[1.87rem] max-xl:pt-[1.87rem]">
+                    <input type="radio" name="project-commerce-type" value="Офіс" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-office"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Офіс</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 px-[1.87rem] pb-[1.87rem] max-xl:pt-[1.87rem]">
+                    <input type="radio" name="project-commerce-type" value="Cалон / магазин" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-store"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Cалон / магазин</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+
+                  <label class="relative cursor-pointer flex flex-col border border-light justify-end items-center gap-10 xl:gap-20 px-[1.87rem] pb-[1.87rem] max-xl:pt-[1.87rem]">
+                    <input type="radio" name="project-commerce-type" value="Інше" class="peer sr-only" />
+                    <svg class="relative z-10 text-light w-max-sm:w-[60%] peer-checked:text-dark peer-checked:[&~h3]:text-dark peer-checked:[&~span]:bg-light">
+                      <use href="./sprites/sprite.svg#icon-another"></use>
+                    </svg>
+                    <h3 class="text-3xl sm:text-4xl self-start relative z-10">Інше</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- block 3 -->
+              <div class="hidden" data-quiz-id="2">
+                <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">На який бюджет матеріалів та меблів разом з ремонтом під ключ ви розраховуєте</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 xl:auto-rows-[27.1rem] gap-4 lg:gap-7">
+                  <label class="relative cursor-pointer flex flex-col border border-light items-center gap-10 xl:gap-20 p-[1.87rem]">
+                    <input type="radio" name="project-price" value="до 800 $/м2" class="peer sr-only" />
+                    <p
+                      class="self-start relative z-10 text-xl lg:text-2xl text-white/40 mb-auto peer-checked:text-dark peer-checked:[&+h3]:text-dark peer-checked:[&~span]:bg-light">
+                      IKEA
+                    </p>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl self-start relative z-10">до 800 $/м2</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                  <label class="relative cursor-pointer flex flex-col border border-light items-center gap-10 xl:gap-20 p-[1.87rem]">
+                    <input type="radio" name="project-price" value="800 — 1000 $/м2" class="peer sr-only" />
+                    <p
+                      class="self-start relative z-10 text-xl lg:text-2xl text-white/40 mb-auto peer-checked:text-dark peer-checked:[&+h3]:text-dark peer-checked:[&~span]:bg-light">
+                      Ціна = Якість <br />
+                      Просто та стильно
+                    </p>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl self-start relative z-10">800 — 1000 $/м2</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                  <label class="relative cursor-pointer flex flex-col border border-light items-center gap-10 xl:gap-20 p-[1.87rem]">
+                    <input type="radio" name="project-price" value="1000 — 1500 $/м2" class="peer sr-only" />
+                    <p
+                      class="self-start relative z-10 text-xl lg:text-2xl text-white/40 mb-auto peer-checked:text-dark peer-checked:[&+h3]:text-dark peer-checked:[&~span]:bg-light">
+                      Як на картинках з Instagram та Pinterest
+                    </p>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl self-start relative z-10">1000 — 1500 $/м2</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                  <label class="relative cursor-pointer flex flex-col border border-light items-center gap-10 xl:gap-20 p-[1.87rem]">
+                    <input type="radio" name="project-price" value="від 1500 $/м2" class="peer sr-only" />
+                    <p
+                      class="self-start relative z-10 text-xl lg:text-2xl text-white/40 mb-auto peer-checked:text-dark peer-checked:[&+h3]:text-dark peer-checked:[&~span]:bg-light">
+                      Luxury інтер’єр з дизайном, меблями та матеріалами
+                    </p>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl self-start relative z-10">від 1500 $/м2</h3>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- block 4 -->
+              <div class="hidden" data-quiz-id="3">
+                <div class="mb-20">
+                  <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Площа об’єкту</h2>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-7">
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="object-area" value="до 50 м2" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light">до 50 м2</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="object-area" value="50 — 90 м2" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light">50 — 90 м2</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="object-area" value="90 — 200 м2" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light">90 — 200 м2</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="object-area" value="від 200 м2" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light">від 200 м2</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Як терміново вам потрібен проект</h2>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-7">
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="beginning works" value="На вчора )" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light text-center">На вчора )</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="beginning works" value="Ремонт планую через 1 - 2 місяці" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light text-center">Ремонт планую через 1 - 2 місяці</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="beginning works" value="Ремонт планую через 3 - 5 місяці" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light text-center">Ремонт планую через 3 - 5 місяці</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                    <label class="relative cursor-pointer flex flex-col border border-light items-center justify-center gap-10 lg:gap-20 p-[1.2rem] lg:p-[2.63rem]">
+                      <input type="radio" name="beginning works" value="Ремонт планую через рік" class="peer sr-only" />
+                      <h3 class="text-xl sm:text-2xl relative z-10 peer-checked:text-dark peer-checked:[&+span]:bg-light text-center">Ремонт планую через рік</h3>
+                      <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- block 5 (result) -->
+              <div class="hidden" data-quiz-id="4">
+                <div class="grid grid-cols-1 xl:grid-cols-[40%_1fr] 2xl:grid-cols-2 gap-20 xl:gap-8">
+                  <div>
+                    <div class="mb-20">
+                      <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Вкажіть свою контактну інформацію</h2>
+                      <div class="grid grid-cols-2 gap-y-[3.13rem] gap-x-[1.88rem]">
+                        <input
+                          type="text"
+                          class="w-full col-span-2 lg:text-base text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent"
+                          placeholder="Ваше ім'я *" />
+                        <input
+                          type="tel"
+                          class="w-full lg:text-base max-sm:col-span-2 text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent"
+                          placeholder="Номер телефону *" />
+                        <input
+                          type="email"
+                          class="w-full lg:text-base max-sm:col-span-2 text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent"
+                          placeholder="Пошта" />
+                      </div>
+                    </div>
+                    <div>
+                      <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem]">Де знаходиться об'єкт?</h2>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-[1.88rem]">
+                        <input
+                          type="text"
+                          class="w-full lg:text-base text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent"
+                          placeholder="Місто" />
+                        <input
+                          type="text"
+                          class="w-full lg:text-base text-base sm:text-xl grow focus:outline-none border-b-2 border-[#D9D9D9] focus:placeholder:opacity-0 focus:border-[#D9D9D9]/50 pb-1 sm:pb-[0.62rem] placeholder:uppercase text-[#D9D9D9] placeholder:text-[#D9D9D9] uppercase bg-transparent"
+                          placeholder="Адреса" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl md:text-4xl uppercase mb-9 md:mb-[3.13rem] text-[#727272]">Бонус при заповнені заявки</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-[1.87rem] lg:auto-rows-[18rem] lg:pt-8">
+                      <label class="right-top-cut border border-[#3f4451] p-4 max-lg:gap-8 flex flex-col relative">
+                        <input type="radio" name="result-present" class="sr-only peer" />
+                        <span class="font-normal relative z-10 peer-checked:text-dark peer-checked:[&+p]:text-dark peer-checked:[&~span]:bg-light text-6xl mb-auto text-[#727272]"
+                          >%</span
+                        >
+                        <p class="text-[#727272] text-xl relative z-10 font-normal pr-8">Знижка на ремонт -5% від моєї ремонтної команди</p>
+                        <span class="w-full h-full absolute left-0 top-0"></span>
+                      </label>
+                      <label class="right-top-cut border border-[#3f4451] p-4 max-lg:gap-8 flex flex-col relative">
+                        <input type="radio" name="result-present" class="sr-only peer" />
+                        <span
+                          class="font-normal relative z-10 peer-checked:[&>svg]:text-dark peer-checked:[&+p]:text-dark peer-checked:[&~span]:bg-light text-6xl mb-auto text-[#727272]">
+                          <svg class="text-[#727272] w-[3.75rem] h-[3.75rem]">
+                            <use href="./sprites/sprite.svg#icon-star-symbol"></use>
+                          </svg>
+                        </span>
+                        <p class="text-[#727272] text-xl relative z-10 font-normal pr-8">Особлива знижка від постачальника</p>
+                        <span class="w-full h-full absolute left-0 top-0"></span>
+                      </label>
+                      <label class="right-top-cut border border-[#3f4451] p-4 max-lg:gap-8 flex flex-col relative">
+                        <input type="radio" name="result-present" class="sr-only peer" />
+                        <span
+                          class="font-normal relative z-10 peer-checked:[&>svg]:text-dark peer-checked:[&+p]:text-dark peer-checked:[&~span]:bg-light text-6xl mb-auto text-[#727272]">
+                          <svg class="text-[#727272] w-[3.75rem] h-[3.75rem]">
+                            <use href="./sprites/sprite.svg#icon-square-symbol"></use>
+                          </svg>
+                        </span>
+                        <p class="text-[#727272] text-xl relative z-10 font-normal pr-8">1 місяць авторський супровід вашого об’єкту</p>
+                        <span class="w-full h-full absolute left-0 top-0"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- quiz footer -->
+              <div class="mt-16 md:mt-[6.25rem]">
+                <div class="w-full mb-[2.81rem] flex flex-wrap gap-12">
+                  <label class="hidden relative cursor-pointer">
+                    <input type="checkbox" id="without-purpose" name="without-purpose" class="peer sr-only" />
+                    <p class="text-light py-3 sm:py-8 px-5 sm:px-10 text-base sm:text-xl relative z-10 font-normal uppercase peer-checked:text-dark peer-checked:[&+span]:bg-light">
+                      Просто вивчаю ринок
+                    </p>
+                    <span class="absolute left-0 top-0 w-full h-full border border-light"></span>
+                  </label>
+                  <label id="add-files" class="hidden items-center gap-6 cursor-pointer uppercase font-normal mb-6">
+                    <img src="./img/add-files.svg" alt="Додати файли" />
+                    <input type="file" multiple class="uppercase file:sr-only text-xl sm:text-2xl truncate" />
+                  </label>
+                  <div class="flex gap-3 max-sm:w-full max-sm:justify-between sm:gap-[1.87rem] flex-wrap sm:ml-auto">
+                    <button
+                      id="prev-block"
+                      class="border font-normal border-[#D9D9D9] disabled:bg-transparent disabled:opacity-20 disabled:text-white text-light py-3 sm:py-8 px-5 sm:px-10 text-base sm:text-xl transition-colors uppercase"
+                      type="button"
+                      disabled>
+                      назад
+                    </button>
+                    <button
+                      id="next-block"
+                      disabled
+                      class="bg-transparent border border-light text-light py-3 sm:py-8 px-5 sm:px-10 text-base sm:text-xl transition-colors uppercase"
+                      type="button">
+                      наступний крок
+                    </button>
+                    <button
+                      id="send-form-button"
+                      class="hidden bg-transparent border border-light text-light py-3 sm:py-8 px-5 sm:px-10 text-base sm:text-xl transition-colors uppercase"
+                      type="submit">
+                      відправити
+                    </button>
+                  </div>
+                </div>
+
+                <div class="max-md:hidden w-full h-[0.3rem] border border-[#4B4B4B] relative">
+                  <span id="progress-bar" class="bg-light h-[0.625rem] w-1/5 transition-all duration-200 absolute left-0 -top-1"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      @@include('components/to-top-button.html', { }) @@include('components/footer.html', { }) @@include('components/modal-order-result.html', { })
+    </div>
+    <script type="module" src="./js/app.min.js"></script>
+  </body>
+</html>

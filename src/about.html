@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'About' })
+  <body>
+    <div class="overflow-hidden relative">
+      @@include('components/header-without-logo.html', { })
+      <main>
+        <!-- hero section -->
+        <section class="pt-28 md:pt-[10.3rem] min-h-screen w-full flex flex-col relative bg-dark overflow-hidden">
+          <div class="relative md:mb-24">
+            <div class="max-w-full sm:max-w-[85%] md:max-w-[60%] xl:max-w-[53%] px-4 relative z-10 mb-6 md:mb-14 lg:mb-32 xl:mb-52">
+              <div class=" ">
+                <a href="/" class="">
+                  <img
+                    src="./img/blinder_logo.svg"
+                    alt="blinder-bureau"
+                    class="info-logo-gsap will-change-transform block translate-y-[0px] md:translate-y-[100px] w-[20rem] h-[10rem] md:w-[25rem] xl:w-[30rem] relative z-10 md:h-[13rem] xl:h-[18.8rem] mb-12 sm:mb-20 lg:mb-32 xl:mb-44 2xl:mb-[12.5rem]" />
+                </a>
+              </div>
+              <div class="max-sm:mb-10 info-text-gsap will-change-transform">
+                <p class="text-lg sm:text-xl lg:text-2xl 2xl:text-3xl uppercase text-shadow">
+                  бюро заснував український креативний директор та дизайнер інтер'єрів андрій бліндер.
+                  <br />
+                  <br />
+                  сформовано з пристрасті створювати додаткову цінність, шукати задоволення в просторі та возз'єднувати людей зі стилем, розумінням та новими враженнями.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-[90%] max-md:ml-auto md:w-[52%] xl:w-[47%] md:absolute right-0 top-0">
+              <div class="w-full h-full relative">
+                <div class=""><img src="./img/about-page/hero-image.webp" alt="blinder-bureau" class="max-sm:hidden w-full h-full object-cover" /></div>
+                <div class="overflow-hidden sm:absolute w-[86%] h-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 object-contain">
+                  <img src="./img/about-page/hero-person.webp" alt="blinder-bureau-author" class="will-change-transform zoom-out-gsap w-full h-full object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-[1385px] px-4 flex flex-col sm:flex-row gap-20 justify-between max-md:mt-12 mb-20 sm:mb-32 lg:mb-[12.5rem]">
+            <p data-aos="fade-up" class="font-outline font-roboto text-transparent text-6xl md:text-8xl">
+              10 <br />
+              років <br />
+              досвіду.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="150" class="font-outline font-roboto text-transparent text-6xl md:text-8xl">
+              130 <br />
+              успішних <br />
+              проектів.
+            </p>
+          </div>
+        </section>
+
+        <section class="bg-dark pb-14 md:pb-[9rem] max-xl:pt-12">
+          <div class="px-4 flex flex-col xl:flex-row gap-y-16 justify-center">
+            <h2 data-aos="fade-up" class="text-xl sm:text-2xl 2xl:text-3xl uppercase text-center">Послуги які ми пропонуємо:</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 lg:gap-[3.19rem] xl:[&>*:nth-child(1)]:col-span-2 xl:[&>*:nth-child(1)]:justify-self-end">
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/1.svg" class="shrink-0 grow" alt="Консультація">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Консультація</h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/2.svg" class="shrink-0 grow" alt="Дизайн проект">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Дизайн проект</h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/3.svg" class="shrink-0 grow" alt="Перепланування">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Перепланування </h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/4.svg" class="shrink-0 grow" alt="3D Візуалізація">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">3D Візуалізація</h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/5.svg" class="shrink-0 grow" alt="Робочі креслення">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Робочі креслення </h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/6.svg" class="shrink-0 grow" alt="Комплектація">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Комплектація  </h3>
+              </div>
+              <div class="flex flex-col items-center gap-[1.87rem] guarantee-item-gsap will-change-auto">
+                <img src="./img/about-page/new-features/7.svg" class="shrink-0 grow" alt="Авторський нагляд">
+                <h3 class="text-sm sm:text-lg md:text-xl 2xl:text-2xl uppercase text-center   ">Авторський нагляд</h3>
+              </div> 
+            </div>
+          </div>
+        </section>
+
+        <div class="w-full h-full min-h-[320px] overflow-hidden">
+          <img src="./img/about-page/image_1.webp" alt="image_1" class="zoom-out-gsap min-h-[320px] will-change-transform w-full h-full object-cover" />
+        </div>
+
+        <section class="bg-dark pt-14">
+          <div class="max-w-[80rem] px-4 pb-32 sm:pb-[12rem] xl:pb-[20rem]">
+            <h2 data-aos="fade-up" class="text-4xl sm:text-6xl lg:text-7xl 2xl:text-8xl relative z-10 mb-12 lg:mb-[6.25rem]">
+              Основний принцип моєї роботи — створювати архітектуру та інтер'єри поза часом.
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="150" class="uppercase text-base sm:text-lg lg:text-2xl">
+              На відміну від багатьох дизайн-студій, я використовую в роботі архітектурний підхід. Дизайн об'єктів не застаріває. Він буде актуальним і через 5, і через 35 років.
+              Його легко доповнювати аксесуарами, оновлювати, граючись з кольорами та формами, але суть простору залишається незмінною.
+            </p>
+          </div>
+          <div class="relative w-full">
+            <img src="./img/about-page/image_2.webp" alt="image_4" class="will-change-transform overtop-el-gsap w-[45%] z-20 h-auto absolute left-0 top-0 object-cover" />
+            <div class="overflow-hidden w-full h-full">
+              <img src="./img/about-page/image_3.webp" alt="image_3" class="zoom-out-gsap will-change-transform w-full h-full object-cover" />
+            </div>
+            <div class="bg-muted xl:absolute right-0 bottom-[6.25rem] py-14 xl:py-[6.25rem] pr-4 xl:pr-[2.75rem] z-30 pl-4 xl:pl-[15%] max-w-full xl:max-w-[72.5rem] ml-auto">
+              <p data-aos="fade-up" class="text-xl md:text-2xl lg:text-3xl uppercase pb-8 sm:pb-16 md:mb-24 xl:mb-[28rem]">
+                Я не сприймаємо кліше. Кожен проект індивідуальний, він втілює мрії замовника та об'єктивує моє бачення ідеального простору.
+              </p>
+              <h2 data-aos="fade-up" class="text-4xl sm:text-6xl lg:text-7xl 2xl:text-8xl relative mb-12 lg:mb-[6.25rem]">
+                Ідеальний дизайн — це більше, ніж просто красива картинка.
+              </h2>
+              <p data-aos="fade-up" class="text-base md:text-xl">
+                Він повинен бути індивідуальним і відповідати завданням, поставленим замовником: спроектувати зручну і функціональну кухню, створити комфортну зону відпочинку,
+                максимально ефективно використовувати невеликий простір. Наші ціни не найнижчі на ринку.
+                <br />
+                <br />
+                Якісний продукт не може коштувати дешево. Для повноцінної роботи над вашим проектом ми повинні вникнути в деталі і продумати все до дрібниць, а це вимагає кропіткої
+                праці, досвіду і знань.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-dark pt-20 pb-14 md:py-[6.25rem]">
+          <div class="container">
+            <h2 data-aos="fade-up" class="uppercase text-2xl sm:text-3xl md:text-4xl mb-14 lg:mb-[6.87rem]">клієнти дякують за відмінний результат і заощаджені ресурси:</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-[1.88rem]">
+              <div class="info-features-gsap will-change-transform pb-5 sm:pb-10 lg:pb-20 border-b border-light flex flex-col gap-4 lg:gap-6 2xl:gap-14 items-start">
+                <img src="./img/about-page/feature_1.svg" alt="ГРОШІ" class="w-28 h-24 2xl:w-32 2xl:h-28" />
+                <h3 class="uppercase text-xl lg:text-2xl 2xl:text-3xl">ГРОШІ</h3>
+                <p class="grow text-base xl:text-lg 2xl:text-xl uppercase leading-[1.4] text-[#82858F]">
+                  ми допомагаємо вам із закупівлею та своєчасною логістикою оздоблювальних матеріалів, меблів, сантехніки, побутової техніки. Це дозволяє уникнути простоїв
+                  будівельників, затягування термінів ремонту та перевитрат бюджету.
+                </p>
+              </div>
+              <div class="info-features-gsap will-change-transform pb-5 sm:pb-10 lg:pb-20 border-b border-light flex flex-col gap-4 lg:gap-6 2xl:gap-14 items-start">
+                <img src="./img/about-page/feature_2.svg" alt="ГРОШІ" class="w-28 h-24 2xl:w-32 2xl:h-28" />
+                <h3 class="uppercase text-xl lg:text-2xl 2xl:text-3xl">Дорогоцінний ЧАС</h3>
+                <p class="grow text-base xl:text-lg 2xl:text-xl uppercase leading-[1.4] text-[#82858F]">
+                  Наші креслення гарантують, що ваш ремонт буде виконано в 2 рази швидше і у вас не виникне протиріч з робітниками на кшталт "скільки вимикачів і де вони мають
+                  бути". Креслення унеможливлять "перестановки" після ремонту.
+                </p>
+              </div>
+              <div class="info-features-gsap will-change-transform pb-5 sm:pb-10 lg:pb-20 border-b border-light flex flex-col gap-4 lg:gap-6 2xl:gap-14 items-start">
+                <img src="./img/about-page/feature_3.svg" alt="ГРОШІ" class="w-28 h-24 2xl:w-32 2xl:h-28" />
+                <h3 class="uppercase text-xl lg:text-2xl 2xl:text-3xl">нервові клітини</h3>
+                <p class="grow text-base xl:text-lg 2xl:text-xl uppercase leading-[1.4] text-[#82858F]">
+                  Завдяки авторському нагляду ви збережете свої нервові клітини і вивільните величезну кількість часу, який інакше неминуче "з'їв би" ремонт. Ви убезпечите себе від
+                  переробок під час ремонту та пов'язаних з ними витрат. А авторський нагляд допоможе якнайшвидше заселитися в простір вашої мрії.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-dark pb-14 sm:pb-24 lg:pb-[12.5rem]">
+          <div class="container flex-col 2xl:flex-row flex items-center gap-9 sm:gap-14 xl:gap-36 2xl:gap-0 2xl:items-start 2xl:pr-20">
+            <h2 data-aos="fade-up" class="text-4xl sm:text-6xl lg:text-7xl 2xl:text-8xl relative max-w-[47.5rem]">Кожна дрібниця має значення:</h2>
+            <div class="w-full relative scale-100 md:scale-[0.7] xl:scale-95 2xl:scale-100">
+              <div data-aos="zoom-in-up" class="md:w-[37.5rem] max-sm:px-4 max-md:px-12 md:mx-auto md:h-[37.5rem] relative">
+                <img src="./img/about-page/circle.svg" alt="Кожна дрібниця має значення" class="hidden md:block w-full h-full" />
+                <p class="md:min-w-[600px] text-xl sm:text-2xl lg:text-3xl md:absolute max-md:mb-9 md:top-1/2 md:left-1/2 md:-translate-y-1/2 md:-translate-x-1/2 uppercase">
+                  створення простору, комфортного для життя.
+                </p>
+                <ul class="max-md:hidden">
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:top-0 md:right-20">Хобі</li>
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:top-1/2 md:-right-28 md:-translate-y-1/2">
+                    звички <br />
+                    членів <br />
+                    сім'ї
+                  </li>
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:-bottom-10 md:right-5">
+                    домашні <br />
+                    улюбленці
+                  </li>
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:bottom-14 md:-left-60">
+                    наявність улюблених <br />
+                    меблів, які необхідно <br />
+                    вписати в інтер'єр.
+                  </li>
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:top-20 md:-left-32">Ваша робота</li>
+                  <li class="uppercase text-xl font-normal leading-[1.4] md:absolute md:-top-5 md:left-14">Характер</li>
+                </ul>
+                <ul class="block md:hidden">
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">Хобі</li>
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">звички членів сім'ї</li>
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">домашні улюбленці</li>
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">наявність улюблених меблів, які необхідно вписати в інтер'єр.</li>
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">Ваша робота</li>
+                  <li class="uppercase list-disc text-lg sm:text-xl font-normal leading-[1.4]">Характер</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('components/to-top-button.html', { }) @@include('components/footer.html', { })
+    </div>
+    <script type="module" src="./js/app.min.js"></script>
+  </body>
+</html>
