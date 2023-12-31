@@ -18,7 +18,7 @@ if (mainHeader && toTopButton) {
     if (scrollTop > headerOffset && !mainHeader.classList.contains("is-active")) {
       mainHeader.classList.add("is-active");
       setTimeout(() => {
-      mainHeader.style.position = "fixed";
+        mainHeader.style.position = "fixed";
       }, 300);
       hoverArea.style.display = "block";
     } else if (scrollTop < headerOffset && mainHeader.classList.contains("is-active")) {
@@ -29,26 +29,22 @@ if (mainHeader && toTopButton) {
   }
   scroll();
 
-  
   function enableHeader() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > headerOffset) {
-      console.log('mouseover');
       mainHeader.classList.add("drop-header");
     }
   }
   function disableHeader() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > headerOffset) {
-      console.log('mouseout');
       mainHeader.classList.remove("drop-header");
     }
   }
 
-
   if (headerWrapper) {
-    headerWrapper.addEventListener('mouseover', enableHeader);
-    headerWrapper.addEventListener('mouseout', disableHeader);
+    headerWrapper.addEventListener("mouseover", enableHeader);
+    headerWrapper.addEventListener("mouseout", disableHeader);
   }
   window.addEventListener("scroll", scroll);
 }

@@ -18,12 +18,6 @@
 // ===============================================================================
 
 @layer components {
-  // header
-  // #header-hover-area {
-  //   &:hover + #main-header {
-  //     @apply transition-all duration-200 translate-y-0 backdrop-blur-md bg-dark/60;
-  //   }
-  // }
   #main-header {
     @apply transition-all duration-200;
     &.is-active {
