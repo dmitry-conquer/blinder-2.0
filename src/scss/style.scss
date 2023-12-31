@@ -18,7 +18,7 @@
 // ===============================================================================
 
 @layer components {
-  // header 
+  // header
   #header-hover-area {
     &:hover + #main-header {
       @apply transition-all duration-200 translate-y-0 backdrop-blur-md bg-dark/60;
@@ -28,9 +28,9 @@
     @apply transition-all duration-200;
     &.is-active {
       @apply transition-all duration-200 -translate-y-full;
-    }
-    &:hover {
-      @apply transition-all duration-200 translate-y-0 backdrop-blur-md bg-dark/60;
+      &:hover {
+        @apply md:transition-all md:duration-200 md:translate-y-0 md:backdrop-blur-md md:bg-dark/60;
+      }
     }
   }
   #burger-inner {
