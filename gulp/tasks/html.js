@@ -30,8 +30,8 @@ export const html = () => {
         app.plugins.if(
           app.isBuild,
           htmlmin({
-            collapseWhitespace: true,
-            removeComments: true,
+            // collapseWhitespace: true,
+            // removeComments: true,
             // preserveLineBreaks: true,
             // removeAttributeQuotes: true,
             // removeRedundantAttributes: true,
